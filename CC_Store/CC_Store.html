@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC Store | 甜點小舖</title>
-    <!-- 引入 Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-    <!-- 載入 CSS -->
     <link rel="stylesheet" href="CC_Store.css">
 </head>
 <body>
 
-    <!-- 導覽列 -->
     <header>
         <a href="#" class="logo">CC Store 🍰</a>
         <nav>
             <a href="#home">首頁</a>
             <a href="#products">精選甜點</a>
             <a href="#about">關於我們</a>
-            <a href="#cart" class="cart-btn">🛒 購物車 <span class="badge">0</span></a>
+            <a href="cart.html" class="cart-btn">🛒 購物車 <span class="badge">0</span></a>
         </nav>
     </header>
 
-    <!-- 首頁橫幅 -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>享受每個甜蜜時刻</h1>
@@ -33,7 +29,6 @@
         </div>
     </section>
 
-    <!-- 商品列表 -->
     <section id="products" class="products">
         <div class="section-title">
             <h2>熱銷甜點</h2>
@@ -41,8 +36,7 @@
         </div>
         <div class="grid">
             
-            <!-- 商品 1 -->
-            <div class="card fade-in">
+            <div class="card fade-in" data-id="item-1" data-price="850">
                 <div class="img-wrapper">
                     <span class="tag hot">熱賣</span>
                     <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="法式經典草莓蛋糕">
@@ -55,8 +49,7 @@
                 </div>
             </div>
 
-            <!-- 商品 2 -->
-            <div class="card fade-in">
+            <div class="card fade-in" data-id="item-2" data-price="520">
                 <div class="img-wrapper">
                     <span class="tag new">新品</span>
                     <img src="https://images.unsplash.com/photo-1563729784474-d77dbb9382f9?auto=format&fit=crop&w=500&q=80" alt="馬卡龍禮盒">
@@ -69,8 +62,7 @@
                 </div>
             </div>
 
-            <!-- 商品 3 -->
-            <div class="card fade-in">
+            <div class="card fade-in" data-id="item-3" data-price="180">
                 <div class="img-wrapper">
                     <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=500&q=80" alt="熔岩巧克力蛋糕">
                 </div>
@@ -82,8 +74,7 @@
                 </div>
             </div>
 
-            <!-- 商品 4 -->
-            <div class="card fade-in">
+            <div class="card fade-in" data-id="item-4" data-price="150">
                 <div class="img-wrapper">
                     <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=500&q=80" alt="檸檬塔">
                 </div>
@@ -98,7 +89,6 @@
         </div>
     </section>
 
-    <!-- 頁尾 -->
     <footer>
         <div class="footer-content">
             <h3>CC Store 🍰</h3>
@@ -106,6 +96,9 @@
             <p class="copyright">&copy; 2026 CC Store 甜點小舖. All rights reserved.</p>
         </div>
     </footer>
+    
+    <!-- 引入購物車邏輯 -->
+    <script src="main.js"></script>
 
 </body>
-</html> 
+</html>

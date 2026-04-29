@@ -319,3 +319,152 @@ footer .copyright {
         transform: translateY(0);
     }
 }  
+
+
+/* === 購物車頁面專屬樣式 === */
+.cart-page {
+    padding: 4rem 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+.cart-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--text-color);
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+    gap: 1.5rem;
+    position: relative;
+    border: 1px solid rgba(255, 216, 216, 0.3);
+}
+
+.cart-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-details h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.cart-item-price {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.qty-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.qty-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.cart-item-total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    min-width: 100px;
+    text-align: right;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #ff9999;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.remove-btn:hover {
+    color: #ff4d4d;
+}
+
+.cart-summary {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(255, 216, 216, 0.3);
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.summary-total {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px dashed var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.checkout-btn {
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+}

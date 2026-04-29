@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 | CC Store</title>
+    <!-- 引入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <!-- 載入 CSS -->
+    <link rel="stylesheet" href="CC_Store.css">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <header>
+        <a href="CC_Store.html" class="logo">CC Store 🍰</a>
+        <nav>
+            <a href="CC_Store.html#home">首頁</a>
+            <a href="CC_Store.html#products">精選甜點</a>
+            <a href="CC_Store.html#about">關於我們</a>
+            <a href="cart.html" class="cart-btn">🛒 購物車 <span class="badge">0</span></a>
+        </nav>
+    </header>
+
+    <!-- 購物車內容區 -->
+    <main class="cart-page fade-in">
+        <h2 class="cart-header">🛍️ 您的購物車</h2>
+        
+        <div class="cart-container" id="cart-items-container">
+            <!-- 購物車商品內容將由 JavaScript 動態生成注入這裡 -->
+        </div>
+
+        <!-- 結帳金額區 -->
+        <div class="cart-summary" id="cart-summary" style="display: none;">
+            <div class="summary-row">
+                <span>小計:</span>
+                <span id="subtotal-price">NT$ 0</span>
+            </div>
+            <div class="summary-row">
+                <span>運費:</span>
+                <span id="shipping-price">NT$ 0</span>
+            </div>
+            <div class="summary-total">
+                <span>總計:</span>
+                <span id="total-price">NT$ 0</span>
+            </div>
+            <button class="btn checkout-btn">前往結帳 ➔</button>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="footer-content">
+            <h3>CC Store 🍰</h3>
+            <p>用甜點點綴你的每一天</p>
+            <p class="copyright">&copy; 2026 CC Store 甜點小舖. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- 引入購物車邏輯 -->
+    <script src="main.js"></script>
+
+</body>
+</html>
