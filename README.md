@@ -2,4 +2,4 @@
 
 [更新日誌]<br>
 4/29<br>
-[11:02] 更新HTML，CSS檔案初步資料<br>
+[11:02] CC_Store 1.0.2-Preview 更新HTML，CSS檔案初步資料<br> 
