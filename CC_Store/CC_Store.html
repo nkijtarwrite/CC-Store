@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC Store | 甜點小舖</title>
+    <!-- 引入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <!-- 載入 CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,57 +20,76 @@
             <a href="#home">首頁</a>
             <a href="#products">精選甜點</a>
             <a href="#about">關於我們</a>
-            <a href="#cart">🛒 購物車 (0)</a>
+            <a href="#cart" class="cart-btn">🛒 購物車 <span class="badge">0</span></a>
         </nav>
     </header>
 
     <!-- 首頁橫幅 -->
     <section id="home" class="hero">
-        <h1>享受每個甜蜜時刻</h1>
-        <p>純手工製作，天然嚴選食材，為您呈現最美好的滋味</p>
-        <a href="#products" class="btn">立即選購</a>
+        <div class="hero-content">
+            <h1>享受每個甜蜜時刻</h1>
+            <p>純手工製作・天然嚴選食材・為您呈現最美好的滋味</p>
+            <a href="#products" class="btn">立即選購</a>
+        </div>
     </section>
 
     <!-- 商品列表 -->
     <section id="products" class="products">
-        <h2>熱銷甜點</h2>
+        <div class="section-title">
+            <h2>熱銷甜點</h2>
+            <p>Bestsellers</p>
+        </div>
         <div class="grid">
             
             <!-- 商品 1 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="法式經典草莓蛋糕">
+            <div class="card fade-in">
+                <div class="img-wrapper">
+                    <span class="tag hot">熱賣</span>
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="法式經典草莓蛋糕">
+                </div>
                 <div class="card-content">
                     <h3>法式草莓蛋糕</h3>
+                    <p class="desc">綿密海綿蛋糕與新鮮草莓的完美相遇</p>
                     <p class="price">NT$ 850</p>
                     <button class="add-to-cart">加入購物車</button>
                 </div>
             </div>
 
             <!-- 商品 2 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb9382f9?auto=format&fit=crop&w=500&q=80" alt="馬卡龍禮盒">
+            <div class="card fade-in">
+                <div class="img-wrapper">
+                    <span class="tag new">新品</span>
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb9382f9?auto=format&fit=crop&w=500&q=80" alt="馬卡龍禮盒">
+                </div>
                 <div class="card-content">
                     <h3>夢幻馬卡龍禮盒 (6入)</h3>
+                    <p class="desc">少女的酥胸，六種層次豐富的獨特口味</p>
                     <p class="price">NT$ 520</p>
                     <button class="add-to-cart">加入購物車</button>
                 </div>
             </div>
 
             <!-- 商品 3 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=500&q=80" alt="熔岩巧克力蛋糕">
+            <div class="card fade-in">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=500&q=80" alt="熔岩巧克力蛋糕">
+                </div>
                 <div class="card-content">
                     <h3>熔岩巧克力蛋糕</h3>
+                    <p class="desc">苦甜巧克力內餡，切開瞬間流出的幸福感</p>
                     <p class="price">NT$ 180</p>
                     <button class="add-to-cart">加入購物車</button>
                 </div>
             </div>
 
             <!-- 商品 4 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=500&q=80" alt="檸檬塔">
+            <div class="card fade-in">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=500&q=80" alt="檸檬塔">
+                </div>
                 <div class="card-content">
                     <h3>法式酸甜檸檬塔</h3>
+                    <p class="desc">清爽酸甜的檸檬凝乳與酥脆塔皮</p>
                     <p class="price">NT$ 150</p>
                     <button class="add-to-cart">加入購物車</button>
                 </div>
@@ -76,7 +100,11 @@
 
     <!-- 頁尾 -->
     <footer>
-        <p>&copy; 甜點 All rights reserved.</p>
+        <div class="footer-content">
+            <h3>CC Store 🍰</h3>
+            <p>用甜點點綴你的每一天</p>
+            <p class="copyright">&copy; 2026 CC Store 甜點小舖. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
